@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f2f5f9;
+  color: #323232;
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+}
+
+.wrapper { 
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  height: 100vh; 
+  max-width: 1280px;
+}
+
+.headerContainer { padding: 20px 16px; }
+
+.headerContainer .logoLink {
+  color: #5fa8d3;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.sectionContainer {
+  flex: 1; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.formContainer {
+  width: 100%;
+  max-width: 320px;
+}
+
+.formContainer .titleForm {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.formContainer .form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form .inputContainer {
+  border: 2px solid rgba(0, 0, 0, .45);
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+}
+
+.inputContainer input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 0 8px;
+  padding-top: 16px;
+  height: 46px;
+  width: 100%;
+}
+
+.inputContainer .labelText {
+  pointer-events: none;
+  position: absolute;
+  top: 9px;
+  left: 8px;
+  transition: all .25s;
+}
+
+.inputContainer input:focus + .labelText,
+.inputContainer input:not(:placeholder-shown) + .labelText {
+  font-size: .8rem;
+  font-weight: 500;
+  top: 3px;
+}
+
+.form .btnContainer {
+  background-color: #5fa8d3;
+  color: #fff;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, .5);
+  border: none;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  height: 46px;
+  width: 100%;
+  transition: all .25s;
+}
+
+.form .btnContainer:hover { 
+  background-color: #5393b8; 
+  box-shadow: 0 0 4px rgba(0, 0, 0, .25);
+}
+
+.footerContainer {
+  background-color: #e5e5e5;
+  border-radius: 12px 12px 0 0;
+  overflow: hidden;
+  display: flex;
+  height: 70px;
+}
+
+.footerContainer .textLink {
+  color: #5fa8d3;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color .25s;
+}
+
+.footerContainer .textLink:hover { background-color: #dedede; }
