@@ -52,6 +52,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  animation: formFade 1s ease-in-out;
 }
 
 .form .inputContainer {
@@ -122,3 +123,15 @@ body {
 }
 
 .footerContainer .textLink:hover { background-color: #dedede; }
+
+@keyframes formFade {
+  from { 
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+  
+  to { 
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
